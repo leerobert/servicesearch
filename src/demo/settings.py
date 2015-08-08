@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'front',
+    'transactions',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -70,7 +71,7 @@ STATICFILES_FINDERS = (
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'assets', 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
