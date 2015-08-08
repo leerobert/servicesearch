@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<p>hello world</p>
+	<div class="grid">
+	  <div class="grid-item">...</div>
+	  <div class="grid-item grid-item--width2">...</div>
+	  <div class="grid-item">...</div>
+	</div>
 {% endblock %}
 
 {% block extra-js %}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script>
+	<script src="{% static 'js/main.js' %}"
 {% endblock %}
