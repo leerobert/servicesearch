@@ -1,0 +1,34 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
+                            
+/* TEAM */                      
+Name: Matthew Bramer                
+Site: http://about.me/iOnline247  
+Twitter: @iOnline247
+
+Name: Veronica Manuel               
+
+Name: Jason Quisberth                
+
+Name: Rob Lee
+							
+/* THANKS */						
+Name: refundr.com
+                    
+/* SITE */          
+Last update: YYYY/MM/DD             
+Standards: HTML5, CSS3,..           
+Components: jQuery, Bootstrap, etc.
