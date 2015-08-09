@@ -94,6 +94,23 @@ textarea {
 .grid-item { width: 25%; }
 .grid-item--width2 { width: 50%; }
 
+.search-container {
+    position: absolute;
+    top:0px;
+    width:1015px;
+    height:81px;
+    background:url(/static/img/Beautiful-HD-Parrot.jpg) no-repeat right center
+}
+.search-bar {
+    position: relative;
+    display: inline;
+    height: 40px;
+    width: 120px;
+    border-bottom: white solid;
+}
+.search-input {
+    background:url(/static/img/search.jpg) no-repeat right center
+}
 
 
 

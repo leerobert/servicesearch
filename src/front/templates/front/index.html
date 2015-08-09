@@ -2,14 +2,18 @@
 {% load staticfiles %}
 
 {% block content %}
-	<div class="grid">
-	  <div class="grid-item">...</div>
-	  <div class="grid-item grid-item--width2">...</div>
-	  <div class="grid-item">...</div>
+	<div class='search-container jumbotron'>
+		<div class='search-bar'>
+			<div class='search-text'>
+				Hire a new:
+			</div>
+			<div class='search-input'>
+			</div>
+		</div>
 	</div>
 {% endblock %}
 
 {% block extra-js %}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script> -->
 	<script src="{% static 'js/main.js' %}"></script>
 {% endblock %}
