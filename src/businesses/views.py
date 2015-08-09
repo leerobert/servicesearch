@@ -18,7 +18,6 @@ def business(request, business_id):
 	business = Business.objects.get(pk=business_id)
 	return JsonResponse(model_to_dict(business))#, safe=False)
 
-@login_required
 def add_business(request):
 	# If it's a HTTP POST, we're interested in processing form data.
 	if request.method == 'POST':
