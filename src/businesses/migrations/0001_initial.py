@@ -12,13 +12,14 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Buisiness',
+            name='Business',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, primary_key=True, auto_created=True)),
+                ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True, serialize=False)),
                 ('created_at', models.DateTimeField(default=django.utils.timezone.now)),
                 ('name', models.CharField(max_length=50)),
                 ('url', models.CharField(max_length=200)),
                 ('zip_code', models.IntegerField()),
+                ('rating', models.IntegerField()),
             ],
         ),
     ]
