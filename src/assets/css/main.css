@@ -128,7 +128,7 @@ label {
 .btn-brand, .btn-brand:active, .btn-brand:hover {
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
-    background-color: #1abc9c
+    background-color: #397fdb;
 }
 
 .btn-brand {
@@ -445,6 +445,7 @@ h1.info-menu-heading {
     text-shadow: 0 0 .5px rgba(255, 255, 255, .25);
     text-align: center;
     background: #35b88f url(/modules/core/img/banner.svg) bottom center no-repeat;
+    background-color: #397fdb;
     padding: 5em 0;
     margin: 0;
     background-size: 125% auto;
