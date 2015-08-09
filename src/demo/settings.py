@@ -38,15 +38,12 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'front',
     'transactions',
-<<<<<<< HEAD
-    'buisinesses',
-=======
+    'businesses',
     'authenticate',
 
     #third party
     'custom_user',
     'widget_tweaks',
->>>>>>> 389aa71ce43720b37b7f823982065b3330b027c9
 )
 
 MIDDLEWARE_CLASSES = (
