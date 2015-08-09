@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'front',
     'transactions',
-    'buisinesses',
+    'businesses',
     'authenticate',
 
     #third party
