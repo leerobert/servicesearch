@@ -2,18 +2,138 @@
 {% load staticfiles %}
 
 {% block content %}
-	<div class='search-container jumbotron'>
-		<div class='search-bar'>
-			<div class='search-text'>
-				Hire a new:
-			</div>
-			<div class='search-input'>
-			</div>
-		</div>
-	</div>
+<section data-ui-view="" class="ng-scope"><section data-ng-controller="HomeController" class="ng-scope">
+  <div class="hero-section">
+    <div class="column">
+      <span class="text">INFO<strong>CLOT</strong>&nbsp;<span class="glyphicon glyphicon-transfer"></span>
+        <span class="desc-text">
+          <!-- Information as a Service -->
+          <small style="font-size:20px">Content Discovery . Data Journalism . Growth Hacking</small>
+        </span>
+      </span>
+    </div>
+  </div>
+</section>
+<div class="container ng-scope">
+  <section class="home-content">
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-responsive featured" src="{% static 'img/compose.svg' %}" alt="">
+      </div>
+      <div class="col-md-4">
+        <h2>FOR PUBLISHERS</h2>
+        <p class="lead">Growth Hacking as a Service for content owners.</p>
+        <p class="lead">
+          <a href="mailto:ravi@inspirationedge.com" class="btn btn-danger">Contact for Beta</a>
+          <!-- <a href="#" class="btn btn-danger">Know More</a> 
+          <a href="#" class="btn btn-danger">Join Now</a> --> 
+        </p>
+      </div>
+      <div class="col-md-4 col-md-offset-1">
+        <h5 class="p-t-10">WHAT'S NEW</h5>
+        <ul class="list-unstyled feature-list p-t-10">
+          <li>
+            <span class="glyphicon glyphicon-bullhorn feature-icon"></span>Revitalize Content Archive
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-dashboard feature-icon"></span>Intelligent Analytics
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-send feature-icon"></span>Growth Hacking
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-content">
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-responsive featured" src="{% static 'img/megaphone.svg' %}" alt="">
+      </div>
+      <div class="col-md-4">
+        <h2>FOR ADVERTISERS</h2>
+        <p class="lead">Target right audience for your product and services.</p>
+        <p class="lead">
+          <a href="mailto:ravi@inspirationedge.com" class="btn btn-danger">Contact for Beta</a>
+          <!-- <a href="#" class="btn btn-danger">Know More</a> 
+          <a href="#" class="btn btn-danger">Join Now</a> --> 
+        </p>
+      </div>
+      <div class="col-md-4 col-md-offset-1">
+        <h5 class="p-t-10">WHAT'S NEW</h5>
+        <ul class="list-unstyled feature-list p-t-10">
+          <li>
+            <span class="glyphicon glyphicon-eye-open feature-icon"></span>Contextualized Audience
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-dashboard feature-icon"></span>Intelligent Analytics
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-magnet feature-icon"></span>Targeted Ads
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-content">
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-responsive featured" src="{% static 'img/news.svg' %}" alt="">
+      </div>
+      <div class="col-md-4">
+        <h2>FOR CONTENTGEEKS</h2>
+        <p class="lead">Discover stories and news that matter to you.</p>
+        <p class="lead">
+
+          <!-- <a href="#!/signin" class="btn btn-danger ">Know More</a> -->
+          <a href="#!/signup" class="btn btn-danger ">Join Now</a>
+        </p>
+      </div>
+      <div class="col-md-4 col-md-offset-1">
+        <h5 class="p-t-10">WHAT'S NEW</h5>
+        <ul class="list-unstyled feature-list p-t-10">
+          <li>
+            <span class="glyphicon glyphicon-screenshot feature-icon"></span>Revolutionized Content Discovery
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-road feature-icon"></span>Interest Tracking
+          </li>
+          <li>
+            <span class="glyphicon glyphicon-filter feature-icon"></span>Personalized Experience
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="banner text-center ng-scope">
+  <h2 style="font-weight:lighter">We are in pursuit of disrupting the digital media publishing<br> get in touch and we will do it together</h2>
+  <br>
+  <br>
+   <a target="_top" href="mailto:ravi@inspirationedge.com" class="btn btn-danger btn-lg">Get In Touch</a>
+</div>
+<!-- ngInclude: '/modules/core/views/footer.client.view.html' --><div class="footer ng-scope" data-ng-include="'/modules/core/views/footer.client.view.html'"><span class="ng-scope">INFOCLOT INC.
+</span><ul class="pull-right list-inline ng-scope">
+  <li><a href="#">About</a>
+  </li>
+  <!-- <li><a href="">For Publishers</a> 
+  </li> -->
+  <li><a href="">Contact</a> 
+  </li>
+</ul>
+</div>
+
+</section>	
 {% endblock %}
 
 {% block extra-js %}
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script> -->
 	<script src="{% static 'js/main.js' %}"></script>
+	<script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
 {% endblock %}

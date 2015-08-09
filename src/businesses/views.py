@@ -10,7 +10,6 @@ def businesses_by_zip(request, zip_code):
 	return JsonResponse(
 		[ model_to_dict(b) for b in
 			Business.objects.filter(zip_code=zip_code)]
-		)
 	)
 
 def business(request, business_id):

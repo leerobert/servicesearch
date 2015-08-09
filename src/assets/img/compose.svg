@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g id="Layer_1">
+	<g>
+		<circle fill="#76C2AF" cx="31.833" cy="32" r="32"/>
+	</g>
+	<g>
+		<g>
+			<g opacity="0.2">
+				<path fill="#231F20" d="M28,23v-9H15c-1.657,0-3,1.343-3,3v34c0,1.657,1.343,3,3,3h22c1.657,0,3-1.343,3-3V26h-9
+					C29.343,26,28,24.657,28,23z"/>
+			</g>
+			<g>
+				<path fill="#E0E0D1" d="M37,12h-9H15c-1.657,0-3,1.343-3,3v25v9c0,1.657,1.343,3,3,3h9h13c1.657,0,3-1.343,3-3V24v-9
+					C40,13.343,38.657,12,37,12z"/>
+			</g>
+		</g>
+		<g opacity="0.2">
+			<rect x="16" y="19" fill="#231F20" width="10" height="2"/>
+		</g>
+		<g opacity="0.2">
+			<rect x="16" y="35" fill="#231F20" width="20" height="2"/>
+		</g>
+		<g opacity="0.2">
+			<rect x="16" y="30" fill="#231F20" width="20" height="2"/>
+		</g>
+		<g opacity="0.2">
+			<rect x="16" y="25" fill="#231F20" width="20" height="2"/>
+		</g>
+		<g opacity="0.2">
+			<rect x="16" y="40" fill="#231F20" width="20" height="2"/>
+		</g>
+		<g opacity="0.2">
+			<rect x="16" y="45" fill="#231F20" width="20" height="2"/>
+		</g>
+	</g>
+	<g opacity="0.2">
+		<path fill="#231F20" d="M55.121,21.864l-7.071-7.071c-1.172-1.172-3.071-1.172-4.243,0l-3.536,3.536l-0.707,0.707L23.302,35.299
+			l-1.886,9.428l-0.943,4.714l4.714-0.943l9.428-1.886l16.263-16.263l0.707-0.707l3.536-3.536
+			C56.293,24.935,56.293,23.036,55.121,21.864z"/>
+	</g>
+	<g>
+		<path fill="#C75C5C" d="M50.879,28.435c-1.172,1.172-3.071,1.172-4.243,0l-7.071-7.071c-1.172-1.172-1.172-3.071,0-4.243
+			l4.243-4.243c1.172-1.172,3.071-1.172,4.243,0l7.071,7.071c1.172,1.172,1.172,3.071,0,4.243L50.879,28.435z"/>
+	</g>
+	<g>
+		
+			<rect x="31.201" y="14.314" transform="matrix(0.7071 0.7071 -0.7071 0.7071 28.331 -15.7696)" fill="#E0995E" width="4" height="24"/>
+	</g>
+	<g>
+		
+			<rect x="32.737" y="18.263" transform="matrix(0.7071 0.7071 -0.7071 0.7071 32.8665 -16.8198)" fill="#F5CF87" width="8" height="26"/>
+	</g>
+	<g>
+		
+			<rect x="39.686" y="22.799" transform="matrix(0.7071 0.7071 -0.7071 0.7071 36.8162 -19.2843)" fill="#E0995E" width="4" height="24"/>
+	</g>
+	<g>
+		<g>
+			<polygon fill="#4F5D73" points="20.473,47.527 25.187,46.584 21.416,42.813 			"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="23.302,33.385 21.416,42.813 25.187,46.584 34.615,44.698 33.201,43.284 33.201,40.456 
+				27.544,40.456 27.544,34.799 24.716,34.799 			"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_2">
+</g>
+</svg>
