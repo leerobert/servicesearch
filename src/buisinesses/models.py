@@ -7,6 +7,7 @@ class Buisiness(models.Model):
 	name = models.CharField(max_length=50)
 	url = models.CharField(max_length=200)
 	zip_code = models.IntegerField()
+	rating = models.IntegerField()
 		
 	def __str__(self):
 		return '<Buisiness: {0}>'.format(self.name).format(self.url)
