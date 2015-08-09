@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block extra-css %}
+<style>
+.glyphicon-menu-up {
+	font-size: 2em;
+}
+.glyphicon-menu-down {
+	font-size: 2em;
+}
+.glyphicon-star {
+	font-size: 2em;
+}
+.glyphicon-star-empty {
+	font-size: 2em;
+}
+.glyphicon-menu-up:hover {
+    color: #0C6;
+}
+.glyphicon-menu-down:hover {
+    color: #F00;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<header>
+    <div class="header-content text-center">
+        <div class="header-content-inner">
+            <h1>Human Resources for <span>{{zip_code}}</span></h1>
+            <hr>
+        </div>
+    </div>
+</header>
+
+<section>
+{% for business in businesses %}
+<div class="row">
+	<div class="col-md-2 col-md-offset-1">
+		<span id="up" class="glyphicon glyphicon-menu-up"></span>
+		<span id="down" class="glyphicon glyphicon-menu-down"></span>
+	</div>
+	<div class="col-md-6" style="font-size: 1.3em;">
+		<a href="http://{{business.url}}" target="_blank">{{ business.name }}</a>
+	</div>
+	<div class="col-md-3" id="rating-{{forloop.counter}}">
+
+	</div>
+</div>
+{% endfor %}
+</section>
+{% endblock %}
+
+{% block extra-js %}
+<script>
+$( document ).ready(function() {
+    console.log( "ready!" );
+    {% for business in businesses %}
+	var rating_elem = $('#rating-{{forloop.counter}}');
+	for (i = 0; i < 5; i++) { 
+		if ( i < {{business.rating}}) {
+			rating_elem.append("<i class='glyphicon glyphicon-star'>");
+		} else {
+			rating_elem.append("<i class='glyphicon glyphicon-star-empty'>");
+		}
+	}
+	{% endfor %}
+});
+</script>
+{% endblock %}
