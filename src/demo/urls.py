@@ -21,9 +21,6 @@ urlpatterns = [
 
     url(r'^', include('front.urls')),
     url(r'^transactions/', include('transactions.urls')),
-<<<<<<< HEAD
     url(r'^buisinesses/', include('buisinesses.urls')),
-=======
     url(r'^account/', include('authenticate.urls')),
->>>>>>> 389aa71ce43720b37b7f823982065b3330b027c9
 ]
