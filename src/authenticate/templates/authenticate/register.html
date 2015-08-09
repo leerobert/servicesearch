@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load widget_tweaks %}
+
+{% block extra-css %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 text-center">
+        <h2 class="page-header">Get started with <strong>OURSITENAME</strong> today!</h2>
+
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+            <span class="sr-only">Error:</span>
+            Enter a valid email address and ensure your passwords match!
+        </div>
+        {% endif %}
+
+        <div class="col-md-6 col-md-offset-3 col-centered">
+            <form id="user_form" method="post" action="."
+                    enctype="multipart/form-data">
+                {% csrf_token %}
+
+                {% for field in user_form.visible_fields %}
+                <div class="form-group">
+                    <label for="{{field.id_for_label}}" class="control-label">{{ field.label }}</label>
+                    {% render_field field class+='form-control' %}
+                </div>
+                {% endfor %}
+
+                <!-- Provide a button to click to submit the form. -->
+               <button type="submit" class="save btn btn-lg btn-success">Create Account</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
