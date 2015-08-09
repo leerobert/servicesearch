@@ -34,11 +34,35 @@
 </header>
 
 <section>
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<div id="alert-area"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2 col-md-offset-1" style="font-size: 1.3em;">
+	Vote
+	</div>
+	<div class="col-md-6" style="font-size: 1.3em;">
+	Company Name
+	</div>
+	<div class="col-md-3" style="font-size: 1.3em;">
+	Yelp Rating
+	</div>
+</div>
+
+	<br>
+
 {% for business in businesses %}
 <div class="row">
 	<div class="col-md-2 col-md-offset-1">
-		<span id="up" class="glyphicon glyphicon-menu-up"></span>
-		<span id="down" class="glyphicon glyphicon-menu-down"></span>
+		<span id="up-{{forloop.counter}}" class="glyphicon glyphicon-menu-up" 
+			onclick="newAlert('success', 'We\'ll let others know you like {{ business.name }}!')">
+		</span>
+		<span id="down-{{forloop.counter}}" class="glyphicon glyphicon-menu-down"
+			onclick="newAlert('danger', 'We\'ll let others know to avoid {{ business.name }}!')">
+		</span>
 	</div>
 	<div class="col-md-6" style="font-size: 1.3em;">
 		<a href="http://{{business.url}}" target="_blank">{{ business.name }}</a>
@@ -48,13 +72,25 @@
 	</div>
 </div>
 {% endfor %}
+<div class="banner text-center ng-scope">
+  <h2 style="font-weight:lighter">Don't see your business? Want to be included in your local area?</h2>
+  <br>
+  <br>
+   <a href="{% url 'add-business' %}" class="btn btn-danger btn-lg">Add my Business</a>
 </section>
 {% endblock %}
 
 {% block extra-js %}
+<script type="text/javascript">
+function newAlert (type, message) {
+    $("#alert-area").append(
+    	$('<div class="alert alert-' + type + ' fade in"><a href="#" class="close" data-dismiss="alert">&times;</a><p>' + message + '</p></div>'));
+    $(".alert").delay(3000).fadeOut("slow", function () { $(this).remove(); });
+}
+</script>
+
 <script>
 $( document ).ready(function() {
-    console.log( "ready!" );
     {% for business in businesses %}
 	var rating_elem = $('#rating-{{forloop.counter}}');
 	for (i = 0; i < 5; i++) { 

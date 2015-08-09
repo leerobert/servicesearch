@@ -6,6 +6,7 @@ class Business(models.Model):
 	created_at = models.DateTimeField(default=timezone.now)
 	name = models.CharField(max_length=50)
 	url = models.CharField(max_length=200)
+	category = models.CharField(max_length=200, default='Human Resources')
 	zip_code = models.IntegerField()
 	rating = models.IntegerField(default=0)
 		
