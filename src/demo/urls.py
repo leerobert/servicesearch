@@ -21,6 +21,6 @@ urlpatterns = [
 
     url(r'^', include('front.urls')),
     url(r'^transactions/', include('transactions.urls')),
-    url(r'^businesses/', include('buisinesses.urls')),
+    url(r'^businesses/', include('businesses.urls')),
     url(r'^account/', include('authenticate.urls')),
 ]
